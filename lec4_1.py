@@ -172,7 +172,6 @@ print("나누기 :", div(a, b)) """
 a = input("a를 입력하세요")
 b = input("b를 입력하세요") """
 # 5개의 숫자를 입력받아 총합을 출력하는 함수
-""" 
 def sum_num(num):
     return sum(num)
 nums = []
@@ -181,9 +180,16 @@ for i in range(1, 6):
     nums.append(innum)
     
     print(sum_num(nums))
+
+# 콜백 함수
+""" def prt_func():
+    print("hello")
+    
+def callfunc(fx):
+    fx()
+    
+callfunc(prt_func)
  """
-
-
 
 
 
