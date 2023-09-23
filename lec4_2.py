@@ -103,14 +103,14 @@ rs = cutstr(url, "/", 4)
 print(rs) """
 
 # 문자유틸 모듈화
-""" import mod.str_util as smod
+"""import mod.str_util as smod
 
 url = "https://www.notion.so/test/4-1/a1fe5ef0df1/41f7a1aa9ec01/3a859a"
 res = smod.cutstr(url, "/", 3)
-print(res) 
- """
-# mate 모듈 사용
-""" import math
+print(res)""" 
+ 
+# math 모듈 사용
+"""import math
 
 sq_res = math.sqrt(6)
 print(sq_res) 
@@ -128,26 +128,24 @@ pi_res = math.pi
 print(pi_res) 
 
 ft_res = math.factorial(4)
-print(ft_res) """
+print(ft_res)"""
 
-import mod.utils as mu
+""" import mod.utils as mu
 
 res = mu.mt_sqrt(7)
 print(res)
 
-sin = mu.mt_simpi()
+sin = mu.mt_sinpi()
 print(sin)
 
-el = mu.mt_elog()
+el = mu.mt_log()
 print(el)
 
-mp = mu.mt_exp(3)
-print(mp)
+ep = mu.mt_exp(3)
+print(ep)
 
 pi = mu.mt_pi()
-print(pi)
-
-
+print(pi) """
 
 """ import random as rd
 
@@ -163,3 +161,11 @@ print(fres)
 
 nvres = rd.normalvariate()
 print(nvres) """
+
+import mod.utils as mu
+
+my_list = ["apple", "banana", "cherry"]
+print(mu.rd_int(1,100))
+print(mu.rd_list(my_list))
+print(mu.rd_rd())
+print(mu.rd_nmvar)
