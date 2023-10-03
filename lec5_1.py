@@ -1,21 +1,24 @@
 # 문자열을 날짜로 변환 
 """ from datetime import datetime as dt
 print(dt.now())
-date_string = '2021-07-00'
-date_object = dt.strptime(date_string, '%Y-%n-%d')
+date_string = '2021-07-08'
+date_object = dt.strptime(date_string, '%Y-%m-%d')
 print(date_object) """
 
 #날짜를 문자열로 변환
 """ date_object = dt.now()
-date_string = date_object.strftime('%Y-%n-%d')
+date_string = date_object.strftime('%Y-%m-%d')
 print(date_string) """
 
-# 수정하기
 """ import mod.utils as mu
 dtnow = mu.get_dtnow()
 print(dtnow)
-rvt = mu.cvt_time2str("2023-09-25")
-print(rvt) """
+
+ret = mu.cvt_time2str("2023-09-25")
+print(ret)
+
+res = mu.cvt_str2time()
+print(res) """
 # os: 운영체제와 상호작용하기 위한 함수 제공
 
 """ import os
@@ -35,6 +38,20 @@ print(os.listdir())
 # 디렉토리 생성
 os.mkdir('new_directory')
 print(os.listdir()) """
+
+import mod.utils as mu
+import os
+print(mu.get_curdir())
+
+pname="python"
+mu.os_mkdir(pname)
+print(os.listdir())
+os.rmdir(pname)
+print(os.listdir())
+
+import sys
+print(sys.version)
+print(sys.argv)
 
 # os 모듈
 """ import mod.utils as mu
