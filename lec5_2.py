@@ -223,14 +223,14 @@ print(df.sort_values(by='Name', ascending=True)) """
 
 import matplotlib.pyplot as plt
 
-x = [1, 2, 3, 4, 5]
-y = [10, 8, 6, 4, 2]
+x = [1, 2, 3, 4, 5, 6]
+y = [10, 8, 6, 4, 2, 1]
 
 plt.plot(x, y)
 
-plt.xlabel('X label')
-plt.ylabel('Y label')
-plt.title('Example plot')
+plt.xlabel('time')
+plt.ylabel('n')
+plt.title('python')
 
 plt.show()
     
