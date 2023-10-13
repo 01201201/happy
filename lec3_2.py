@@ -94,12 +94,12 @@ for fruit in fruits:
      print(fruit)
 '''
 # 이중 for문 출력
-# my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
-'''
+my_list = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+
 for row in my_list:
     for num in row:
         print(num)
-'''
+
 # 0 ~ 9까지 출력
 '''        
 for i in range(10):
@@ -185,7 +185,7 @@ print(sum)
 
 # 1에서 100까지의 짝수, 홀수 출력하기
 
-i = 1
+""" i = 1
 
 while i <= 100:
     if i % 2 == 0:
@@ -193,7 +193,7 @@ while i <= 100:
     elif i % 2 == 1:
         print("홀수 : ", i)
 
-    i += 1
+    i += 1 """
 
 
 # 1에서 100까지의 7의 배수만 출력하기
