@@ -74,7 +74,7 @@ print(p2.name)
 print(p2.count) """
 
 # 클래스 메서드 
-class Person :
+""" class Person :
 	count = 0
 
 	def __init__(self, name, age, number):
@@ -95,9 +95,74 @@ print(p1.name)
 print(p1.getCount())
 p2 = Person("dff", 45, "654064645066")
 print(p2.name)
-print(p2.getCount())
+print(p2.getCount()) """
 
+# cls와 self의 차이
 
+""" class MyClass:
+    count = 0
 
- 
- 
+    def __init__(self, num):
+        self.count = num
+
+    @classmethod
+    def clsMethod(cls):
+        cls.count += 1 
+        print(f"cls count = {cls.count}")
+
+    def instMethod(self):
+        self.count += 1 
+        print(f"instance = {self.count}")
+
+MyClass.clsMethod()
+
+obj = MyClass(10)
+
+obj.instMethod()
+print(obj.count)
+
+print(MyClass.count)
+print(MyClass.count) """
+
+class Champion:
+    lv = 1
+    movspd = 0
+    basicMovSpd = 325
+    atkSpd = 0.658
+    
+    def __init__(self, chmpNam, speed):
+        self.hp = 100
+        self.chmpNam = chmpNam
+        self.level = 1
+        self.setSpeed(speed)
+        self.setAtkSpd()
+        self.setMovSpd()
+        
+    def setAtkSpd(self):
+        self.atkSpd = 0.658*((1.0334)**(Champion.lv - 1) )
+    def beAtk(self, dem):
+        print("be attack", dem, 1-100.0/(100.0+100))
+        self.dem = dem*(100.0/(100.0+100))
+        print(self.dem)
+        
+    def setSpeed(self, sp):
+        if (sp == 1):
+            self.speed = 50
+        else:
+            self.speed = 0
+            
+    def setMovSpd(self):
+        print("set Mov Spd")
+        self.movspd = (20 + self.speed)*(1.00)*(100)
+        
+    def printStatus(self):
+        print("chmpNam:%s, hp:%f, lv%d, mvSpd:%f, atkSpd:%f") 
+        
+ashe = Champion("ashe", 474.0)
+mipo = Champion("mipo", 520.0)
+
+ashe.printStatus()
+mipo.printStatus()
+
+mipo.beAtk(63.0)
+mipo.printStatus()
