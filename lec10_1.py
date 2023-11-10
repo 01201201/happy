@@ -166,38 +166,38 @@ print("multi end", end - start) """
 # 멀티 프로세싱 병렬처리
 # 다음시간에 다시!
 
-""" import multiprocessing
+import multiprocessing
 import time
 
 def counter(str_name):
     for i in range(50000):
         print(f"Countdown {i}, name : {str_name}\n")
+if __name__ == "__main__":
+    process1 = multiprocessing.Process(target=counter, args=("1num",))
+    process2 = multiprocessing.Process(target=counter, args=("2num",))
+    process3 = multiprocessing.Process(target=counter, args=("3num",))
 
-process1 = multiprocessing.Process(target=counter, args=("1num",))
-process2 = multiprocessing.Process(target=counter, args=("2num",))
-process3 = multiprocessing.Process(target=counter, args=("3num",))
+    start = time.time()
 
-start = time.time()
+    process1.start()
+    process2.start()
+    process3.start()
 
-process1.start()
-process2.start()
-process3.start()
+    process1.join()
+    process2.join()
+    process3.join()
 
-process1.join()
-process2.join()
-process3.join()
+    end = time.time()
 
-end = time.time()
-
-print("multi end", end - start) """
+    print("multi end", end - start)
  
 # main 실행
 
-def main() :
+""" def main() :
     print("hello world")
 
 def run() :
     print("hello python")
 
 if __name__ == "__main__":
-    run()
+    run() """
