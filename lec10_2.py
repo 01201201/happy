@@ -221,7 +221,7 @@ print(item.get_text())
 print("\n00-------------------------------\n")
 print(item.get_text().strip()) """
 
-""" from bs4 import BeautifulSoup as bs
+from bs4 import BeautifulSoup as bs
 import requests as rq
 url = "https://table.cafe.daum.net/"
 res = rq.get(url)
@@ -240,8 +240,8 @@ print(wt.get_text())
 
 goods = res_html.select_one("#content_table > div.table_group > div:nth-child(3) > div.item_reply > div > button > strong")
 #print(goods)
-print(goods.get_text()) """
-from bs4 import BeautifulSoup as bs
+print(goods.get_text())
+""" from bs4 import BeautifulSoup as bs
 import requests as rq
 
 url = 'https://news.daum.net/'
@@ -261,4 +261,5 @@ print("\n-------------------------------\n")
 ct = res_html.select("a wrap_thumb")
 for j in ct:
     c = j.attrs["data-tiara-custom"]
-    print(c + "\n")
+    print(c + "\n") """
+    
