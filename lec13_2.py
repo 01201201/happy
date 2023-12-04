@@ -237,11 +237,11 @@ plt.legend(ncol=2, fontsize=20,frameon=True, shadow=True) """
 
 # 축 범위 지정
 
-dic_val = {"x_data": [2,3,6,7,10], "y_data": [1,4,5,8,9]}
+# dic_val = {"x_data": [2,3,6,7,10], "y_data": [1,4,5,8,9]}
 
-plt.plot("x_data", "y_data", data=dic_val)
-plt.xlabel("x_data")
-plt.ylabel("y_data")
+# plt.plot("x_data", "y_data", data=dic_val)
+# plt.xlabel("x_data")
+# plt.ylabel("y_data")
 
 """ plt.xlim()
 plt.ylim()
@@ -290,7 +290,7 @@ plt.axis("square")
 # plt.axis("off") """
 
 # 선 스타일 설정
-plt.plot([2,3,6,7,10], [1,4,5,8,9], "-", label="PData(km)")
+# plt.plot([2,3,6,7,10], [1,4,5,8,9], "-", label="PData(km)")
 # plt.plot([2,3,6,7,10], [1,4,5,8,9], "--", label="PData(km)")
 # plt.plot([2,3,6,7,10], [1,4,5,8,9], ":", label="PData(km)")
 # plt.plot([2,3,6,7,10], [1,4,5,8,9], ".", label="PData(km)")
@@ -324,4 +324,6 @@ plt.plot([1,3,5,7,9], [2,4,6,8,10], "-", color="C9", label="Value(m)")
 plt.plot([1,3,5,7,9], [2,4,6,8,10], linestyle="solid", linewidth=10, solid_capstyle="round", label="Value(m)")
 # plt.plot([1,3,5,7,9], [2,4,6,8,10], linestyle="dashed", linewidth=10, solid_capstyle="round", label="Value(m)" """
 
-plt.show()
+# plt.show()
+
+# 마커 지정
